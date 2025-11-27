@@ -1,0 +1,10 @@
+OVERVIEW
+Unpredictable rainfall leads to crop loss, improper irrigation planning, and reduced yield.
+This project provides farmers with accurate, location-based rainfall predictions and real-time alerts, empowering them to take preventive actions.
+
+The system integrates:
+✔ A trained CatBoost ML model
+✔ A Flask web application
+✔ Farmer registration module
+✔ Automated email alert system
+✔ User-friendly prediction interface
