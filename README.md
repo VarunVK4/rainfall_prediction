@@ -85,3 +85,9 @@ Rainfall-Prediction-Alert-System/
 ├── requirements.txt
 ├── README.md
 └── dataset/ (optional)
+
+
+DEVELOPED BY
+Varun Kaarthikeyan S J
+M.Tech – Software Engineering
+VIT, Vellore
