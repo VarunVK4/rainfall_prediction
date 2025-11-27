@@ -1,2 +1,2 @@
 # rainfall_prediction
-A Machine Learning-Based Rainfall Prediction and Alert System designed to enhance climate-resilient farming by providing accurate, timely, and location-specific rainfall forecasts to farmers.
+A complete ML + Web Application that predicts rainfall using the CatBoost algorithm and sends automated email alerts to farmers based on their location. Built with Python, Flask, MySQL, and trained on structured meteorological data.
