@@ -1,0 +1,112 @@
+<html>
+<head>
+    <link rel="stylesheet" href={{url_for('static',filename='predictor.css')}}>
+    <title>Rain Prediction</title>
+</head>
+<body>
+    <img src="../static/predic.png" class="img">
+    <section id="prediction-form">
+        <form class="form" action="/predict", method="POST">
+            <img class="pred" src="../static/pred.png" class="title">
+            <div class="form-container">
+                        <div class="form-item">
+                        <label for="date" class="date">Date</label><br>
+                        <input type="date" class="form-control" id="date" name="date"><br><br>
+                
+               
+                        <label for="mintemp" class="mintemp"> Minimum temperature</label><br>
+                        <input type="text" class="form-control" id="mintemp" name="mintemp"><Br><Br>
+                    
+                
+            
+                        <label for="maxtemp" class="maxtemp">Maximum Temperature</label><br>
+                        <input type="text" class="form-control" id="maxtemp" name="maxtemp"><Br><Br>
+                    
+                        <label for="rainfall" class="rainfall">Rainfall</label><br>
+                        <input type="text" class="form-control" id="rainfall" name="rainfall"><Br><Br>
+                  
+                        <label for="evaporation" class="evaporation">Evaporation</label><br>
+                        <input type="text" class="form-control" id="evaporation" name="evaporation"><Br><Br>
+                    
+                        <label for="sunshine" class="sunshine">Sunshine</label><br>
+                        <input type="text" class="form-control" id="sunshine" name="sunshine"><Br><Br>
+                  
+                        <label for="windgustspeed" class="windgustspeed">Wind Speed</label><br>
+                        <input type="text" class="form-control" id="windgustspeed" name="windgustspeed"><Br><Br>
+                    </div>
+                    <div class="half">
+                        <label for="humidity9am" class="humidity9am">Humidity</label><Br>
+                        <input type="text" class="form-control" id="humidity9am" name="humidity9am"><Br><Br>
+                    
+                        <label for="pressure9am" class="pressure9am">Pressure</label><Br>
+                        <input type="text" class="form-control" id="pressure9am" name="pressure9am"><Br><Br>
+                
+                        <label for="temp9am" class="temp9am">Temperature</label><Br>
+                        <input type="text" class="form-control" id="temp9am" name="temp9am"><Br><Br>
+                 
+                        <label for="cloud9am" class="cloud9am">Cloud</label><Br>
+                        <input type="text" class="form-control" id="cloud9am" name="cloud9am"><Br><Br>
+                    
+                        <label for="location" class="location" name="location">Location</label><Br>
+                        <select class="location" id="location" name="location" aria-label="Location">
+                            <option selected>Select Location</option>
+                            <option value= 0>Arakkonam</option>
+                            <option value= 1>Aruppukottai</option>
+                            <option value= 2>Avadi</option>
+                            <option value= 3>Chengalpattu</option>
+                            <option value= 4>Chennai</option>
+                            <option value= 5>Coimbatore</option>
+                            <option value= 6>Cuddalore</option>
+                            <option value= 7>Dindigul</option>
+                            <option value= 8>Erode</option>
+                            <option value= 9>Gudiyatham</option>
+                            <option value= 10>Hosur</option>
+                            
+                        </select><br><br>
+                   
+                
+                        <label for="windgustdir" class="windgustdir" name = "windgustdir">Wind Direction</label><br>
+                        <select class="windgustdir" id="windgustdir" name = "windgustdir" aria-label="Wind Gust Direction">
+                            <option selected>Select Wind Direction</option>
+                            <option value= 3>N</option>
+                            <option value= 4>W</option>
+                            <option value= 7>S</option>
+                            <option value= 15>E</option>
+                            <option value= 1>NW</option>
+                            <option value= 11>NE</option>
+                            <option value= 9>SW</option>
+                            <option value= 12>SE</option>
+                            <option value= 0>NNW</option>
+                            <option value= 6>NNE</option>
+                            <option value= 8>SSW</option>
+                            <option value= 10>SSE</option>
+                            <option value= 2>WNW</option>
+                            <option value= 5>WSW</option>
+                            <option value= 14>ENE</option>
+                            <option value= 13>ESE</option>
+                        </select><br><br>
+                    
+                        <label for="raintoday" class="raintoday" name="raintoday">Rain Today</label><br>
+                        <select class="raintoday" id="raintoday" name="raintoday" aria-label="Rain Today">
+                            <option selected>Did it Rain Today</option>
+                            <option value= 1>Yes</option>
+                            <option value= 0>No</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="sub" style="margin-left:40%;">Predict</button>
+               
+        </form>
+    </div>
+    <div>
+         <h1><center> {{ prediction }} </center></h1>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+

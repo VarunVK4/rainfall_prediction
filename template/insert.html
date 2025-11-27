@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Farmer records</title>
+    <link rel="stylesheet" href={{url_for('static',filename='ins.css')}}>
+</head>
+<body>
+  <img src="../static/topic.png" alt="topic" class="insert">
+   <div class="navi">
+  <form class="form" action="/insert", method="POST"><br><Br>
+      Enter Farmer's Name : <input type="text" id="name" name="name"><br><Br>
+      Enter Farmer's Email : <input type="email" id="email" name="email"><br><br>
+      Select Location : 
+      <select class="location" id="location" name="location">
+        <option selected>Select Location</option>
+        <option value= "Arakkonam">Arakkonam</option>
+        <option value= "Aruppukottai">Aruppukottai</option>
+        <option value= "Avadi">Avadi</option>
+        <option value= "Chengalpattu">Chengalpattu</option>
+        <option value= "Chennai">Chennai</option>
+        <option value= "Coimbatore">Coimbatore</option>
+        <option value= "Cuddalore">Cuddalore</option>
+        <option value= "Dindigul">Dindigul</option>
+        <option value= "Erode">Erode</option>
+        <option value= "Gudiyatham">Gudiyatham</option>
+        <option value= "Hosur">Hosur</option>
+        
+    </select>
+    <br><Br>
+      <input type="submit" class="sub" value="Insert Record">
+  </form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
