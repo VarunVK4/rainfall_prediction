@@ -3,8 +3,83 @@ Unpredictable rainfall leads to crop loss, improper irrigation planning, and red
 This project provides farmers with accurate, location-based rainfall predictions and real-time alerts, empowering them to take preventive actions.
 
 The system integrates:
-✔ A trained CatBoost ML model
-✔ A Flask web application
-✔ Farmer registration module
-✔ Automated email alert system
-✔ User-friendly prediction interface
+• A trained CatBoost ML model
+• A Flask web application
+• Farmer registration module
+• Automated email alert system
+• User-friendly prediction interface
+
+FEATURES
+1. ML-Based Rainfall Prediction
+• Uses CatBoost Classifier
+• Inputs: temperature, humidity, wind speed, pressure, rainfall, sunshine, evaporation, cloud %, location, etc.
+• Outputs: Rain or No Rain
+
+2. Farmer Registration
+• Stores farmer name, email & location in MySQL
+• Enables personalized rainfall alerts
+
+3. Automated Alert System
+• Sends rainfall advisories via Email (SMTP Gmail App Password)
+• Sends:
+  • 🌧️ Rain advisory
+  • ☀️ Sunny day farming tips
+• Alerts are location-specific and real-time
+
+4. Web Application (Flask + HTML/CSS)
+• Pages included:
+• Home
+• Registration (Insert)
+• Predictor
+• Rainy/Sunny Response Pages
+
+5. Secure and Scalable
+• MySQL database
+• Modular Python code
+• Supports 100+ concurrent users
+• Can integrate IoT sensors in future
+
+ARCHITECTURE
+User Input → Preprocessing → CatBoost Model → Rain Prediction →  
+  If Rain: Send Email Alert  
+  Else: Send Sunny-Day Tips  
+
+TECH STACK
+1. Programming & Frameworks
+• Python 3.x
+• Flask
+• HTML/CSS/JS
+
+2. Machine Learning
+• CatBoost
+• Pandas, NumPy
+• Scikit-learn
+• SMOTE (to handle imbalance)
+
+3. Database
+• MySQL (Farmer data + logs)
+• Email Service
+• Gmail SMTP + App Password
+
+PROJECT STRUCTURE
+Rainfall-Prediction-Alert-System/
+│
+├── models/
+│   └── catml.pkl               # Trained CatBoost model
+│
+├── template/
+│   ├── index.html
+│   ├── insert.html
+│   ├── predictor.html
+│   ├── after_rainy.html
+│   └── after_sunny.html
+│
+├── static/
+│   ├── CSS files
+│   ├── images (farm.png, pred.png, etc.)
+│
+├── apk.py                     # Main Flask application
+├── requirements.txt
+├── README.md
+└── dataset/ (optional)
+
