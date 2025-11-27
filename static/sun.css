@@ -1,0 +1,31 @@
+body{
+    background-image: url(bkg.png);
+    
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ .txt{
+        position: relative;
+        margin-top:16%;
+        margin-left:37%;
+        width: 400px;
+        color: rgb(8, 8, 8);
+        text-align: center;
+        
+    }
+.tick{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -370px;
+    border-radius: 50px;
+}
+.sun{
+    position:relative;
+    margin-top: -500px;
+    margin-left:1035px;
+}

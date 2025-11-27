@@ -1,0 +1,72 @@
+body{background-image: url('animated\ farmer.jpg');
+    background-size:100%;
+    position: relative;
+    font-size: 20px;
+}
+.insert{
+    padding-top: 2%;
+}
+.navi{
+    
+        position: relative;
+        width: 520px;
+        height : 300px;
+        margin-left: 10%;
+        margin-top: 150px;
+        border: 5px solid rgb(221, 234, 221);
+        border-radius :35px;
+        padding: 15px;
+        color:#a2d783;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300px;
+        text-align: center;
+        background-color: rgba(0, 8, 0, 0.2);
+}
+input[type=text]{
+    width:200px;
+    height: 25px;
+    border-radius: 20px;
+    background: #ebf2f7;
+    border: 2px solid #ebf2f7;
+}
+input[type=email]{
+    width:200px;
+    height: 25px;
+    border-radius: 20px;
+    background: #ebf2f7;
+    border: 2px solid #ebf2f7;
+}
+select{
+    width:150px;
+    height: 30px;
+    border-radius: 20px;
+    background: #ebf2f7;
+    border: 2px solid #ebf2f7;
+}
+.head{
+    width:650px;
+    height:60px;
+    margin-left:20px;
+    margin-top: 10px;
+}
+.sub{
+    width:150px;
+    height:28px;
+    background-color: greenyellow;
+    color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.sub:hover{
+    transform:scale(1.2);
+    color:black;
+;
+ }
+
+ .rain{
+    position: absolute;
+    width:5px;
+    height:10px;
+    margin-top: 50px;
+    margin-left: 130px;
+ }

@@ -1,0 +1,88 @@
+body {
+  background-image: url('rfprediction.gif');
+  background-size: 100%;
+  position: relative;
+    
+}
+
+.form h1 {
+    color: #0fd3dd;
+    margin-left:50%;
+}
+
+.button {
+    padding: 5px 30px;
+    font-size: 18px;
+}
+
+.form-container {
+    color: #07dcf4;
+    font-size: 20px;
+    width: 800px;
+    height: 570px;
+    padding: 20px;
+    margin-top:4%;
+    margin-left: 25%;
+    background-color: rgba(1, 255, 5, 0.2);
+    border-radius: 5px;
+}
+
+.form-item{
+    width:50%;
+    margin-top:5px;
+    margin-left: 25px;
+}
+.half{
+    position:absolute;
+    width:200px;
+    margin-left:30%;
+    margin-top:-550px;
+}
+input[type=text] {
+    width: 300px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  input[type=date] {
+    width: 300px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  select {
+    width: 300px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .title{
+    
+    height: 45px;
+    width: 300px;
+    margin-left: 43%;
+  }
+  .sub{
+    width: 150px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-top: -1%; 
+    background-color: #18332f;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition:0.5s;
+  }
+  .pred{
+    margin-top: 1.5%;
+    margin-left: 40%;
+  }
+
+  .sub:hover{
+     transform:scale(1.2);
+     color:greenyellow;
+  }
+  .img{
+    width:300px;
+    height: 700px;
+    position:absolute;
+  }

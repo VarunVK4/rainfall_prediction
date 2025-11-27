@@ -1,0 +1,133 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(bkg.png);
+    background-size: 110%;
+    background-color: rgba(24, 51, 47, var(--bg-opacity));;
+    background-color: #18332f;
+    margin-bottom: 10%
+;
+}
+.farmtuner{
+    background-image: url(farmtunerbg.jpg);
+    background-size: 100%; 
+    padding-bottom: 16.8%;
+}
+nav{
+    position: absolute;
+    width: 520px;
+    height : 50px;
+    margin-left: 63%;
+    margin-top: -68px;
+    
+    border-radius :8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a
+{
+    position: relative;
+    display : inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+.about{
+    background-image: url(aboutbg.webp);
+    background-size: 100%;
+    margin-top: -6.05%;
+    margin-bottom: 2%;
+    padding-bottom: 7%;
+}
+.head{
+  margin-left:40px;
+  margin-top: 50px;
+  width:400px;
+  position: absolute;
+}
+.info{
+    margin-top: 10%;
+    padding-top: -5%;
+    margin-bottom: 5%;
+}
+.nv{
+    color: black;
+    font-size: x-large;
+}
+.nv:hover{
+    transform:scale(1.2);
+    color: #0505f6;
+}
+.ico{
+    margin-top: 50px;
+    height:80px;
+    width:80px;
+    margin-left: 30px;
+}
+.developer{
+    text-align: center;
+    margin-top: -24%;
+}
+
+#home{
+    margin-top:135px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    width: 40%;
+    margin-left:70px;
+    color:#2D6E2D;
+    font-weight:bolder;
+}
+#ab{
+    display: flex;
+	flex-direction: row;
+    text-align: left;
+	align-items: center;
+	background-color: #eee;
+	min-height: 95vh;
+    color:black;
+    font-size: 30px;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+#ds{
+    display: flex;
+	flex-direction: row;
+	align-items: center ;
+	background-color: #eb0d0d;
+	min-height: 95vh;
+    color:white;
+    font-size: 30px;
+    margin-left: 35%;
+    margin-top: -20%;
+}
+#pic                
+{
+    position: absolute;
+    margin-top: -570px;
+    margin-left: 55%;
+    height:700px;
+    width:600px;
+}
+
+.tp{
+    font-weight: bold;
+    color: #068606;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1%;
+    text-align: left;
+}
