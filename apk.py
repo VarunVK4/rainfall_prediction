@@ -12,8 +12,8 @@ PORT = 587
 
 smtp = smtplib.SMTP(HOST,PORT)
 smtp.starttls()	
-FROM_EMAIL = "farmeralert2025@gmail.com"
-PASSWORD = "vpep ridd kguq svrl"
+FROM_EMAIL = "YOUR MAIL"
+PASSWORD = "YOUR MAIL KEY"
 smtp.login(FROM_EMAIL, PASSWORD)
 
 
